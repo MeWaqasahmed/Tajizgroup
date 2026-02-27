@@ -359,6 +359,8 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .cert-card {
@@ -369,6 +371,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
     text-align: center;
     transition: transform 0.3s, background 0.3s;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .cert-card:hover {
@@ -867,7 +871,7 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-container {
         gap: 30px;
-        padding: 0 15px;
+        padding: 0 20px;
     }
     
     .hero-headline {
@@ -894,25 +898,32 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-certifications {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
+        padding: 0;
     }
     
     .cert-card {
-        padding: 18px 15px;
+        padding: 18px 12px;
     }
     
     .cert-icon {
         font-size: 28px;
         margin-bottom: 8px;
+        width: 40px;
+        height: 40px;
     }
     
     .cert-card h3 {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     .cert-card p {
-        font-size: 12px;
+        font-size: 11px;
+    }
+    
+    .cert-card span {
+        font-size: 13px;
     }
     
     .hero-buttons {
@@ -2214,6 +2225,30 @@ h1, h2, h3, h4, h5, h6 {
     /* Extra small devices */
     .container {
         padding: 0 15px;
+    }
+    
+    .hero-container {
+        padding: 0 15px;
+    }
+    
+    .hero-certifications {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .cert-card {
+        padding: 15px 10px;
+    }
+    
+    .cert-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    
+    .cert-card span {
+        font-size: 12px;
     }
     
     .hero-headline {
