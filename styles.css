@@ -831,7 +831,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
     
@@ -886,6 +886,11 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 11px;
         padding: 6px 12px;
         margin-bottom: 15px;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
     
     .hero-certifications {
@@ -1799,7 +1804,7 @@ h1, h2, h3, h4, h5, h6 {
     
     /* Stats adjustments */
     .hero-stats {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
     
