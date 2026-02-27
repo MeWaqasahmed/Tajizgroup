@@ -661,6 +661,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .footer-logo {
@@ -792,6 +793,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Responsive */
+@media (min-width: 969px) {
+    /* Ensure footer is horizontal on desktop */
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
 @media (max-width: 968px) {
     .nav-links {
         display: none;
@@ -1921,16 +1929,6 @@ h1, h2, h3, h4, h5, h6 {
     
     .contact-form {
         padding: 30px 20px;
-    }
-    
-    /* Footer */
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .footer-logo {
-        flex-wrap: wrap;
     }
     
     /* Video section */
