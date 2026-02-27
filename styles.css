@@ -658,7 +658,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -843,6 +843,12 @@ h1, h2, h3, h4, h5, h6 {
     .process-timeline {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    /* Footer responsive */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -906,6 +912,12 @@ h1, h2, h3, h4, h5, h6 {
     
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+    
+    /* Footer responsive */
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
